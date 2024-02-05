@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>OCTANET landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link
+</head>
+<body>
+   <section class="header" id="homepage">
+    <nav>
+        <div class="logotext">
+         <p>
+               <a href="index.html"><img src="https://res.cloudinary.com/dwj593qyv/image/upload/v1704523905/logo_wuixp4.png" class="navimage"</a>
+               <h1>Dinner Delight</h1>
+         </p>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="#homepage">HOME</a></li>
+                <li><a href="#aboutpage">ABOUT</a></li>
+                <li><a href="#servicespage">SERVICES</a></li>
+                <li><a href="#queriespage">QUERIES</a></li>
+                <li><a href="#contactpage">CONTACT</a></li>
+                <li><a href="#loginpage">LOGIN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="textbox">
+        <h1>DELIGHT MEMORIES</h1>
+        <p>make memories with food </br>
+        
+            We make your ordinary moments memorable with our foods.
+        </p>
+        <p style="color: #0000ff; font-weight:bold; font-size:25px;">
+            Moments made  memorable with our foods.
+        </p>
+        <a href=""class="buttons">view menu</a>
+
+    </div>
+   
+
+   </section>
+   <!-----------ABOUT---------->
+   <section class="cardcontainer"id="aboutpage">
+    <div class="ABOUT">
+        <h1>ABOUT US</h1>
+        <p>we deliver fine quality foods from our hygenic kitchen. </br> 
+            <img src="https://res.cloudinary.com/dwj593qyv/image/upload/v1704860977/kitchen_wnjmbj.jpg" class="images"> 
+            <img src="https://res.cloudinary.com/dwj593qyv/image/upload/v1704862290/veggies_jwnru9.jpg" class="images"> </br>
+            We make your moments memorable with our delightful foods. </br> Our 5-star chefs well trained and well 
+            mannered monitor quality of each product before delivery. </br> This feature makes us to delivery our foods with great taste and quality. </br>
+            <a class="specials">SUSTAINABILITY</a> </br>
+            Usage of paper and jute bags for packing makes our foods enhance their </br> 
+            taste and do not spoil it's quality during packaging. making products sustainable also. </br>
+        </p>
+    </div>
+   </section>
+   <!---------SERVICES---------->
+   <section class="cardcontainer2" id="servicespage">
+    <div class="SERVICES">
+        <h1>SERVICES WE OFFER</h1>
+        <p>we deliver fine quality foods anywhere and anytime
+           </br><img src="https://res.cloudinary.com/dwj593qyv/image/upload/v1704880746/anywhere_ghpv2s.jpg"></br>
+           <a class="specials">super fast delivery</a> </br>enjoy your food super hot.
+           </br> we take your feedbacks and queries and strictly abide to follow them.
+           </br>we make sure to hear you and resolve your queries.
+           </br><a class="specials"> we make your moments memorable by sending your favourite food with greeting cards,special notes,flowers</a>
+              
+        
+        </p>
+    </div>
+   </section>
+   <section class="cardcontainer3">
+    <div class="ABOUT" id="queriespage">
+        <h1>CONTACT DIRECTLY FOR ALL YOUR QUERIES</h1>
+        <p>
+            Some common Queries addressed are<p id="demo" onclick="displaytext()">are veg and non veg cuisines different? &raquo;</p>
+            </br><p id="demo2" onclick="hidetext()">Do you supply vegan foods also? &raquo;</p> </br>
+           All the queries will be addressed directly through email  <a class="specials">456879@gmail.com</a> </br>
+           Orelse please do contact us at <a class="specials">4569871321</a> directly 
+        </p>
+    </div>
+   </section>
+    <!----------LOGIN PAGE----------->
+    <section id="loginpage">
+        <form action="action_page.php" method="post">
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+       </section>
+   <!--------contact page-->
+   <section class="cardcontainer3" id="contactpage">
+    <div class="contactus">
+        <div class="contact-us-icon-container">
+            <i class="fa fa-instagram icons nav .fa"></i>
+        </div>
+        <p>follow us on </br> _DD-foods_</p>
+        <div class="contact-us-icon-container">
+           <i class="fa fa-envelope icons nav .fa"></i>
+        </div>
+        <p>mail us at </br> 456879@gmail.com</p>
+        <div class="contact-us-icon-container">
+            <i class="fa fa-phone icons nav .fa"></i>
+        </div>
+        <p>contact us at </br> 4569871321</p>
+    </div>
+   </section>
+  
+   <!---------JavaScript for Toggle Menu---------->
+   <script>
+      var navLinks = document.getElementById("navLinks");
+       function showmenu(){
+          navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+        function displaytext() {
+          document.getElementById("demo").innerHTML = "We maintain separate veg and non veg cooking areas along with separate staff";
+        }
+        function hidetext() {
+          document.getElementById("demo2").innerHTML = "YES! We supply  vegan foods also";
+        }
+        
+    
+   </script>
+            
+</body>
+</html>
